@@ -6,10 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     
@@ -17,25 +20,25 @@
 <!-- Navbar -->
 
 
-<div class="container mx-auto px-10">
+<div class="container mx-auto px-0 absolute left-1/2 transform -translate-x-1/2">
     <div class="flex items-center py-8">
         <div><img src="/assets/Logo (1).svg" alt=""></div>
-        <div class="mx-auto hidden md:block">
-            <ul class="flex items-center gap-12 text-[#495263]">
-                <li><a href="#">Find Jobs</a></li>
-                <li><a href="#">Recent Post</a></li>
-                <li><a href="#">Company</a></li>
+        <div class="mx-auto hidden md:block" >
+            <ul class="flex items-center gap-12 text-[#495263]" id="#menu">
+                <li><a href="#" class="hover:text-black">Find Jobs</a></li>
+                <li><a href="#" class="hover:text-black">Recent Post</a></li>
+                <li><a href="#" class="hover:text-black">Company</a></li>
             </ul>
         </div>
         <div class="md:hidden ml-auto">
             <!-- Hamburger menu button -->
-            <button type="button" class="block text-[#28344A]">
+            <button type="button" class="block text-[#28344A]" id="Hamburger">
                 <img src="https://cdn-icons-png.flaticon.com/512/5358/5358649.png" class="w-10 ml-auto" alt="">
             </button>
         </div>
         <div class="hidden md:block">
             <a href="#" class="font-medium text-[#28344A]">Login</a>
-            <a href="#" class="font-medium py-5 px-10 text-white ml-10 rounded-full bg-[#864BD8] h-max ">Create account</a>
+            <a href="#" class="font-medium border-2 border-transparent transition duration-200 hover:border-[#864BD8] hover:bg-white hover:text-[#864BD8] py-5 px-10 text-white ml-10 rounded-full bg-[#864BD8] h-max ">Create account</a>
         </div>
     </div>
 </div>
@@ -44,5 +47,63 @@
 
 
 
+<!-- Hero section -->
+
+<section class="relative text-center container mx-auto py-16 lg:h-screen h-[100lvh] flex items-center justify-center">
+    <div>
+        <h1 class="text-[#3a3939] font-['Montserrat'] text-5xl lg:text-7xl font-bold mx-auto slide-left leading-tight">The home of your <br> dream j<span class="font-['Montserrat'] text-red-500 mx-1">o</span>b</h1>
+        <div class="lg:flex block justify-center items-center w-full mt-36">
+            <div class="rounded-lg mb-16 lg:mb-0 lg:rounded-full neup py-5 lg:flex block items-center px-5 justify-center">
+                <div class="relative">
+                    <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="py-5 px-11 pl-11 block rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Job Title or keyword">
+                    <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.4878 14.5735L11.6798 10.6129C12.6589 9.44901 13.1954 7.98455 13.1954 6.45999C13.1954 2.89801 10.2974 0 6.73538 0C3.1734 0 0.275391 2.89801 0.275391 6.45999C0.275391 10.022 3.1734 12.92 6.73538 12.92C8.0726 12.92 9.34691 12.5167 10.4364 11.751L14.2734 15.7416C14.4337 15.9082 14.6494 16 14.8806 16C15.0994 16 15.307 15.9166 15.4645 15.7649C15.7993 15.4428 15.81 14.9085 15.4878 14.5735ZM6.73538 1.68522C9.36825 1.68522 11.5102 3.82713 11.5102 6.45999C11.5102 9.09286 9.36825 11.2348 6.73538 11.2348C4.10252 11.2348 1.96061 9.09286 1.96061 6.45999C1.96061 3.82713 4.10252 1.68522 6.73538 1.68522Z" fill="#252525"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="relative">
+                    <input type="text" id="hs-leading-icon" name="hs-leading-icon" class="py-5 px-11 pl-11 block rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Location">
+                    <div class="absolute border-l-0 lg:border-l-2 h-1/2 my-auto inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3109 2.78191C12.0894 1.01409 10.1536 0 8.00009 0C5.84662 0 3.91078 1.01409 2.68931 2.78191C1.47384 4.54078 1.19319 6.76756 1.93706 8.73491C2.13603 9.27216 2.45231 9.79412 2.87487 10.2832L7.57419 15.8031C7.68047 15.928 7.83619 16 8.00009 16C8.164 16 8.31972 15.928 8.426 15.8031L13.124 10.2847C13.5484 9.79281 13.8643 9.27141 14.0616 8.73847C14.807 6.76756 14.5263 4.54078 13.3109 2.78191ZM13.014 8.34666C12.8618 8.75784 12.6134 9.16438 12.2761 9.55541C12.2752 9.55634 12.2742 9.55728 12.2735 9.55841L8.00009 14.5777L3.72409 9.55525C3.38694 9.16456 3.13853 8.75806 2.98487 8.34294C2.36969 6.71591 2.60316 4.87478 3.60959 3.41819C4.61919 1.95694 6.21956 1.11888 8.00009 1.11888C9.78059 1.11888 11.3808 1.95691 12.3904 3.41819C13.397 4.87478 13.6307 6.71591 13.014 8.34666Z" fill="#252525"/>
+                            <path d="M8.00055 3.31934C6.27318 3.31934 4.86768 4.72465 4.86768 6.45221C4.86768 8.17977 6.27299 9.58509 8.00055 9.58509C9.72811 9.58509 11.1334 8.17977 11.1334 6.45221C11.1334 4.72484 9.72793 3.31934 8.00055 3.31934ZM8.00055 8.46618C6.89005 8.46618 5.98655 7.56268 5.98655 6.45218C5.98655 5.34168 6.89005 4.43818 8.00055 4.43818C9.11105 4.43818 10.0146 5.34168 10.0146 6.45218C10.0146 7.56268 9.11105 8.46618 8.00055 8.46618Z" fill="#252525"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="relative">
+                    <select class="py-3 px-4 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                        <option selected>Remotely</option>
+                        <option>Offline</option>
+                      </select>
+                    <div class="absolute h-1/2 hidden lg:block border-l-2 my-auto inset-y-0 left-0 items-center pointer-events-none z-20 pl-4">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="py-8 bg-[#F57343] text-white px-14 ml-10 rounded-full transition duration-200 hover:text-[#F57343] border-2 border-transparent hover:border-[#F57343] hover:bg-white">Search</a>
+        </div>
+        
+    </div>
+    <div class="hidden lg:block">
+        <img src="/assets/doodle-5 2.png" class="left-10 top-1/4 absolute" alt="">
+        <img src="/assets/Rectangle.png" class="absolute left-0" alt="">
+        <img src="/assets/Rectangle-1.png" class="absolute top-32 right-10" alt="">
+        <img src="/assets/Icon.png" class="absolute right-72 top-64" alt="">
+    </div>
+</section>
+
+<!-- Hero section -->
+
+
+<script>
+ const button = document.getElementById("Hamburger");
+  const block = document.getElementById("menu");
+
+  // Add an event listener to the button
+  button.addEventListener("click", function () {
+    // Add the desired style to the block
+    block.style.display = "block"
+  });   
+</script>
 </body>
 </html>

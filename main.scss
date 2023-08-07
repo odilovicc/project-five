@@ -107,3 +107,9 @@
   }
   animation: levitate 2s infinite;
 }
+.shadow-sd{
+  &:hover{
+    transform: translateY(-10px) !important;
+    box-shadow: 0px 50px 100px -20px rgba(0, 0, 0, 0.06) !important;
+  }
+}
